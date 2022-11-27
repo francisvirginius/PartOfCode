@@ -1,0 +1,33 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*$hue:223;
+$starHue38;
+*/
+:root{
+    --bg:#{hs|($hue,10%,90%)};
+    --fg:#{hsl($hue,10%,10%)};
+    --primary:#{hsl($hue,90%,55%)};
+    --yellow:#{hsl($starHue,90%,55%)};
+    --yellow-t:#{hsla($starHue,90%,55%,0)};
+    --bezier:cubic-bezier(0.42.0,0.58.1);
+    --trans-dur:0.3s;
+    font-size: calc(24px + (30 - 24) * (100vw - 320px) / (1280 - 320));
+}
+body{
+background-color:var(--bg);
+color:var(--fg);
+font: lem/1.5 "DM Sans", sans-serif;
+display: flex;
+height: 100vh;
+transition:
+    background-colorvar(--trans-dur),
+    colorvar(--trans-dur);
+}
+

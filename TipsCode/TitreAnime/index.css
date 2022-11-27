@@ -1,0 +1,21 @@
+h1{
+    color: black;
+    font-size: 30px;
+    opacity: 0;
+    animation: titleAnimate 1s ease-in-out forwards;
+    /* forward pour garder l'etat finale de l'animation */
+    transform: translateY(20px) ;
+}
+
+@keyframes titleAnimate {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+    100% {
+    opacity: 1;
+    transform: translateY(0) ;
+    
+}
+}
