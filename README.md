@@ -1,6 +1,6 @@
 # PartOfCode
 Little tips I found !
-
+----------------------------------------------------
 Pour Git :
 => git status 
     pour voir le statu des commite
