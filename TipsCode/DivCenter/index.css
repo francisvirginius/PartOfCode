@@ -1,0 +1,23 @@
+/* Methode 1*/
+.Parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* the container blue */
+    background: blue;
+    width: 150px;
+    height: 150px;
+}
+
+/* Methode 2  */
+
+.Parent{
+    display: grid;
+    place-items: center;
+}
+
+.children{
+    background: black;
+    width: 100px;
+    height: 100px;
+}
