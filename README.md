@@ -15,5 +15,17 @@ Pour Git :
 => git commit -m "Mon nouveau commit"
     cree un nouveau commit avec les modifications. 
 => git push 
-     envoie le commit.
+     envoie le commit
+------------------------------------------------------
+pour sql :
+
+=> cree une table avec une cle concaténée
+        CREATE TABLE Commande (
+    	numClic int(11) ,
+        numProdc int (11),
+        PRIMARY KEY (numClic,numProdc),
+        FOREIGN KEY (numClic) REFERENCES Client(numCli),
+        FOREIGN KEY (numProdc) REFERENCES Produit(numProd)
+)
+
     
